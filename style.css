@@ -1,0 +1,181 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b64;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+main > h2 {
+    color: #243b64;
+    text-align: center;
+    font-size: 27px;
+}
+
+.intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.places-list {
+    padding-left: 30px;
+}
+
+.places-list li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 18px;
+    border: 1px solid #dce3ed;
+    border-radius: 10px;
+}
+
+.places-list li::marker {
+    color: #243b64;
+    font-weight: bold;
+}
+
+.places-list h3 {
+    color: #243b64;
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.places-list p {
+    margin: 0 0 14px;
+    color: #444;
+}
+
+.places-list a {
+    display: inline-block;
+    background-color: #315caa;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.places-list a:hover {
+    background-color: #1c3972;
+}
+
+.submit-section {
+    background-color: white;
+    margin-top: 30px;
+    padding: 22px;
+    border: 1px solid #dce3ed;
+    border-radius: 10px;
+}
+
+.submit-section h2 {
+    color: #243b64;
+    margin-top: 0;
+}
+
+#nameForm {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#nameInput {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #b9c5d6;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#nameForm button {
+    background-color: #16834a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nameForm button:hover {
+    background-color: #106537;
+}
+
+#message {
+    color: #16834a;
+    font-weight: bold;
+}
+
+#nameList {
+    padding-left: 22px;
+}
+
+#nameList li {
+    margin: 7px 0;
+}
+
+footer {
+    background-color: #243b64;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    main > h2 {
+        font-size: 23px;
+    }
+
+    .places-list {
+        padding-left: 25px;
+    }
+
+    .places-list li {
+        padding: 14px;
+    }
+
+    #nameForm {
+        flex-direction: column;
+    }
+
+    #nameForm button {
+        width: 100%;
+    }
+}
